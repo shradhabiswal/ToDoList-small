@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List For You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="todolistLogo.png" alt="to-do list">
+        </a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="heading">
+            <h3>Make your own to-do list</h3>
+        </div>
+        <div class="btnclass" class="tasks">
+            <input type="text" id="inputTask" class="addbtn" placeholder="enter your task">
+            <input type="date" id="inputDate" class="addbtn">
+            <button id="addadd" onclick="addtask();">ADD</button>
+        </div>
+        <div class="lists"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

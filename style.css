@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255, 4, 96);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+a img{
+   width: 100px;
+   border-radius: 5px;
+}
+
+.navbar a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-weight: 700;
+    font-size: large;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.container{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 3px;
+}
+
+#heading{
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: white;
+    margin: 20px;
+    padding: 15px;
+    color: rgb(255, 4, 96);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnclass{
+    display: flex;
+}
+
+.addbtn{
+    margin: 3px;
+    padding: 7px;
+    width: 80%;
+    border: none;
+    border-radius: 17px;
+}
+
+button{
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    margin-left: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}    
+
+@media only screen and (max-width: 480px) {
+    .btnclass{
+        flex-direction: column;
+        align-items: center;
+    }
+    button{
+        width: 40px;
+        height: 20px;
+        margin: 10px;
+        border-radius: 3px;
+    }
+  }
+
+.lists{
+    margin-top: 20px;
+}  
+.tasks{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    margin: 10px;
+}  
+
+#addadd{
+    background-color: #fff;
+    color: rgb(255, 4, 96);
+    font-weight: 700;
+    width: 170px
+}
